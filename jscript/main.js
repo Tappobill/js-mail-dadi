@@ -1,12 +1,13 @@
-let listaEmail = ["chri@email.it", "christian@email.it", "salvati@email.it"];
-console.log(listaEmail);
-console.log(`la lista è formata da ${listaEmail.length} email `);
-console.log(listaEmail[0]);
-console.log(listaEmail[1]);
-console.log(listaEmail[2]);
-
 function recuperoEmail() {
+    let listaEmail = ["chri@hotmail.it", "christian@hotmail.it", "salvati@hotmail.it"];
     let inputEmail = document.getElementById("inputEmail");
     let email = inputEmail.value;
-   
+
+    let emailIn = listaEmail.includes(email)
+
+    if (emailIn == true) {
+        alert("La tua email risulta essere registrata nel nostro Database, premi OK per proseguire");
+    } else {
+        alert("La tua email non risulta nel nostro Database, prosegui con la Registrazione");
+    }
 }
