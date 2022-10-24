@@ -8,7 +8,5 @@ console.log(listaEmail[2]);
 function recuperoEmail() {
     let inputEmail = document.getElementById("inputEmail");
     let email = inputEmail.value;
-
-    listaEmail.push(email);
-    console.log(listaEmail)
+   
 }
