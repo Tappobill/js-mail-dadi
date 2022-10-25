@@ -18,9 +18,30 @@
             <label for="inputEmail" class="form-label">Email</label>
             <div class="d-flex">
                 <input type="email" class="form-control w-75" id="inputEmail" placeholder="Inserisci la tua email">
-                <input type="submit" onclick="recuperoEmail();" class="ms-5 bg-white border border-outline rounded w-25" value="Accedi">
+                <input type="submit" onclick="recuperoEmail();" class="ms-5 bg-white border border-outline rounded w-25"
+                    value="Accedi">
             </div>
         </form>
+    </div>
+
+    <div class="container text-center mt-5">
+        <div>
+            <input type="text" id="player" readonly>
+            <input type="text" id="pc" readonly>
+        </div>
+
+        <div>
+            <input type="text" id="matchplayer" value="0" readonly>
+            <input type="text" id="matchpc" value="0" readonly>
+        </div>
+    </div>
+
+    <div class="container text-center mt-5" id="results">
+
+    </div>
+
+    <div class="container text-center mt-5">
+        <input type="submit" onclick="calcoloPartite();">
     </div>
 
 
